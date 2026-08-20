@@ -8,3 +8,13 @@ Thu Aug 20 09:44:39 PM UTC 2026:
  tests:  2|5
 total_score: 15/60
 4a7269f
+Thu Aug 20 09:56:38 PM UTC 2026: 
+ list.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:60:16: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Wint-conversion]
+   60 |         return -1;
+      |                ^
+a55ca47
