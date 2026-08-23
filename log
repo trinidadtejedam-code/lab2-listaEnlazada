@@ -37,3 +37,17 @@ Sun Aug 23 11:27:36 PM UTC 2026:
  tests:  2|5
 total_score: 15/60
 c7a5a3b
+Sun Aug 23 11:31:02 PM UTC 2026: 
+ list.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:58:22: error: assignment to ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   58 |     if(list->current = NULL || list->current->next == NULL)
+      |                      ^
+list.c:58:8: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   58 |     if(list->current = NULL || list->current->next == NULL)
+      |        ^~~~
+cc1: all warnings being treated as errors
+f45768c
