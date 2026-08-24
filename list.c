@@ -180,7 +180,7 @@ void * popCurrent(List * list) {
     }
 
     list->current = eliminado->next;
-    free(eliminado)
+    free(eliminado);
     return data;
 }
 
