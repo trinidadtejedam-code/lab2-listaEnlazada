@@ -81,3 +81,23 @@ Mon Aug 24 12:01:37 AM UTC 2026:
  tests:  11|1
 total_score: 50/60
 7b4c015
+Mon Aug 24 12:09:46 AM UTC 2026: 
+ list.c | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:183:20: error: expected ‘;’ before ‘return’
+  183 |     free(eliminado)
+      |                    ^
+      |                    ;
+  184 |     return data;
+      |     ~~~~~~          
+list.c:163:11: error: unused variable ‘data’ [-Werror=unused-variable]
+  163 |     void *data = eliminado->data;
+      |           ^~~~
+list.c:185:1: error: control reaches end of non-void function [-Werror=return-type]
+  185 | }
+      | ^
+cc1: all warnings being treated as errors
+fe2a224
