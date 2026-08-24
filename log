@@ -126,3 +126,9 @@ list.c:179:18: error: ‘Node’ has no member named ‘tail’
   179 |         eliminado->tail = eliminado->prev;
       |                  ^~
 12be763
+Mon Aug 24 12:14:39 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|0
+total_score: 60/60
+a2ccf24

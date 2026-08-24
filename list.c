@@ -176,7 +176,7 @@ void * popCurrent(List * list) {
     }
     else
     {
-        eliminado->tail = eliminado->prev;
+        list->tail = eliminado->prev;
     }
 
     list->current = eliminado->next;
